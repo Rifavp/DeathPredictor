@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Death Predictor - Because guessing your end is just the beginning</title>
+    <link href="https://fonts.googleapis.com/css2?family=Creepster&family=Nosifer&family=Butcherman&family=Chiller&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Floating Emojis -->
+    <div class="floating-emoji skull1">💀</div>
+    <div class="floating-emoji skull2">☠</div>
+    <div class="floating-emoji ghost1">👻</div>
+    <div class="floating-emoji ghost2">🎃</div>
+
+    <!-- Background Animation Elements -->
+    <div class="bg-animation">
+        <div class="floating-skull"></div>
+        <div class="floating-skull"></div>
+        <div class="floating-skull"></div>
+        <div class="lightning"></div>
+        <div class="lightning"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="#home" class="nav-link">🏠 Home</a></li>
+            <li><a href="#predict" class="nav-link">🔮 Predict</a></li>
+            <li><a href="#results" class="nav-link">📊 Results</a></li>
+            <li><a href="#certificate" class="nav-link">📜 Certificate</a></li>
+            <li><a href="#share" class="nav-link">📱 Share</a></li>
+        </ul>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home">
+        <div class="header">
+            <h1 class="title">💀 DEATH PREDICTOR 💀</h1>
+            <p class="tagline neon-green">"Because guessing your end is just the beginning."</p>
+            <p class="tagline neon-red">"Your death, our prediction — no refunds."</p>
+        </div>
+    </section>
+
+    <!-- Predict Section -->
+    <section id="predict">
+        <div class="death-form">
+            <h2 style="text-align: center; margin-bottom: 2rem; font-family: 'Creepster', cursive; color: #9d4edd;">Enter Your Doom Details 💀</h2>
+            
+            <div class="form-group">
+                <label for="name">👤 Your Name:</label>
+                <input type="text" id="name" placeholder="Enter your name" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="birthdate">🎂 Your Birthdate:</label>
+                <input type="date" id="birthdate" required>
+            </div>
+            
+            <button type="button" class="predict-btn" onclick="predictDeath()">
+                🔮 PREDICT MY DEATH 🔮
+            </button>
+        </div>
+    </section>
+
+    <!-- Results Section -->
+    <section id="results">
+        <div id="resultBox" class="result-box">
+            <h3 class="result-title">💀 YOUR DOOM AWAITS 💀</h3>
+            <div class="grave">⚰</div>
+            <div id="deathInfo" class="death-info"></div>
+            
+            <!-- Death-o-Meter -->
+            <div class="death-meter">
+                <div class="meter-label">💀 Death-o-Meter: Just for laughs! 💀</div>
+                <div class="progress-container">
+                    <div id="progressBar" class="progress-bar" style="width: 0%"></div>
+                </div>
+                <div id="progressText" style="text-align: center; margin-top: 1rem; color: #00ff41;"></div>
+            </div>
+            
+            <div class="action-buttons">
+                <button class="btn cert-btn" onclick="generateCertificate()">📜 Get My Death Certificate</button>
+                <button class="btn share-btn" onclick="shareResult()">📱 Share How You'll Die</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certificate Modal -->
+    <div id="certificateModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeCertificate()">&times;</span>
+            <div class="certificate-container">
+                <div id="certificateContent" class="certificate">
+                    <!-- Certificate content will be generated here -->
+                </div>
+            </div>
+            <div class="modal-buttons">
+                <button class="btn cert-btn" onclick="downloadImage()">📥 Download Image</button>
+                <button class="btn share-btn" onclick="shareCertificate()">📱 Share Certificate</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Social Share Modal -->
+    <div id="shareModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeShareModal()">&times;</span>
+            <h3 style="text-align: center; color: #9d4edd; margin-bottom: 2rem;">Share Your Death Prediction</h3>
+            <div class="share-buttons">
+                <button class="social-btn facebook" onclick="shareToFacebook()">
+                    <i class="fab fa-facebook-f"></i> Facebook
+                </button>
+                <button class="social-btn twitter" onclick="shareToTwitter()">
+                    <i class="fab fa-twitter"></i> Twitter
+                </button>
+                <button class="social-btn whatsapp" onclick="shareToWhatsApp()">
+                    <i class="fab fa-whatsapp"></i> WhatsApp
+                </button>
+                <button class="social-btn instagram" onclick="shareToInstagram()">
+                    <i class="fab fa-instagram"></i> Instagram
+                </button>
+                <button class="social-btn snapchat" onclick="shareToSnapchat()">
+                    <i class="fab fa-snapchat"></i> Snapchat
+                </button>
+                <button class="social-btn threads" onclick="shareToThreads()">
+                    <i class="fab fa-threads"></i> Threads
+                </button>
+                <button class="social-btn copy" onclick="copyToClipboard()">
+                    <i class="fas fa-copy"></i> Copy Link
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 Death Predictor. All rights reserved. (Terms and conditions apply in the afterlife)</p>
+            <div class="footer-social">
+                <a href="#" class="footer-social-link"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="footer-social-link"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="footer-social-link"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="footer-social-link"><i class="fab fa-whatsapp"></i></a>
+                <a href="#" class="footer-social-link"><i class="fab fa-snapchat"></i></a>
+                <a href="#" class="footer-social-link"><i class="fab fa-threads"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
