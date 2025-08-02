@@ -47,7 +47,8 @@ For Software:
 For Software:
 
 # Screenshots (Add at least 3)
-![Screenshot1](Add screenshot 1 here with proper name)
+![WhatsApp Image 2025-08-02 at 14 54 11_106b94ae](https://github.com/user-attachments/assets/bacddcec-61e6-43f5-921e-206769721662)
+
 *Add caption explaining what this shows*
 
 ![Screenshot2](Add screenshot 2 here with proper name)
