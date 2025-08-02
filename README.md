@@ -16,9 +16,10 @@ Death predictor🎯
 Death Predictor is a fun and spooky web app that playfully 'predicts' your cause and date of death based on your name and birthdate. With humorous scenarios, interactive animations, and a personalized death certificate, it’s designed purely for entertainment and laughter. Share your doom with friends on social media and enjoy the creepy-cool experience!
 
 ### The Problem (that doesn't exist)
+People just don’t know when or how they’ll meet their ultimate doom — and it’s making their lives far too predictable and boring. Life without a dramatic, glitter-filled banana‑peel slip just feels incomplete.
 
 ### The Solution (that nobody asked for)
-
+Enter Death Predictor: a hilariously creepy web app that calculates your final day and serves up a ridiculous cause of death — from hugging a cactus to overdosing on Kerala parottas. You even get a stylish, totally non‑legal death certificate to share with friends and freak them out!
 
 ## Technical Details
 ### Technologies/Components Used
