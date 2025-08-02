@@ -1,97 +1,60 @@
 <img width="3188" height="1202" alt="frame (3)" src="https://github.com/user-attachments/assets/517ad8e9-ad22-457d-9538-a9e62d137cd7" />
 
-
-# [Project Name] 🎯
+Death predictor🎯
 
 
 ## Basic Details
-### Team Name: [Name]
+### Team Name: USELESS
 
 
 ### Team Members
-- Team Lead: [Name] - [College]
-- Member 2: [Name] - [College]
-- Member 3: [Name] - [College]
+- Team Lead: Rifa vp - Farook college
+- Member 2: Dilna p - Farook college
+
 
 ### Project Description
-[2-3 lines about what your project does]
+Death Predictor is a fun and spooky web app that playfully 'predicts' your cause and date of death based on your name and birthdate. With humorous scenarios, interactive animations, and a personalized death certificate, it’s designed purely for entertainment and laughter. Share your doom with friends on social media and enjoy the creepy-cool experience!
 
 ### The Problem (that doesn't exist)
-[What ridiculous problem are you solving?]
 
 ### The Solution (that nobody asked for)
-[How are you solving it? Keep it fun!]
+
 
 ## Technical Details
 ### Technologies/Components Used
 For Software:
-- [Languages used]
-- [Frameworks used]
-- [Libraries used]
-- [Tools used]
+- html
+- css
+- java script
+- Chatgpt
+- Claude ai
 
-For Hardware:
-- [List main components]
-- [List specifications]
-- [List tools required]
 
 ### Implementation
 For Software:
-# Installation
-[commands]
-
-# Run
-[commands]
+Open the .html File
 
 ### Project Documentation
 For Software:
 
 # Screenshots (Add at least 3)
 ![WhatsApp Image 2025-08-02 at 14 54 11_106b94ae](https://github.com/user-attachments/assets/bacddcec-61e6-43f5-921e-206769721662)
+This is the homepage
 
-*Add caption explaining what this shows*
+![Screenshot2]
+![WhatsApp Image 2025-08-02 at 14 54 20_2c27694d](https://github.com/user-attachments/assets/87a9a50e-3f9f-411d-adf8-11636b9a31c2)
 
-![Screenshot2](Add screenshot 2 here with proper name)
-*Add caption explaining what this shows*
+This is where we enter our date of birth and name .
 
-![Screenshot3](Add screenshot 3 here with proper name)
-*Add caption explaining what this shows*
+![Screenshot3]
+![WhatsApp Image 2025-08-02 at 14 54 30_e147768b](https://github.com/user-attachments/assets/3ab8faa9-b7ef-4ba5-b561-b1c2f4c90ff0)
+This is where we can see our death date and cause of death.
 
-# Diagrams
-![Workflow](Add your workflow/architecture diagram here)
-*Add caption explaining your workflow*
-
-For Hardware:
-
-# Schematic & Circuit
-![Circuit](Add your circuit diagram here)
-*Add caption explaining connections*
-
-![Schematic](Add your schematic diagram here)
-*Add caption explaining the schematic*
-
-# Build Photos
-![Components](Add photo of your components here)
-*List out all components shown*
-
-![Build](Add photos of build process here)
-*Explain the build steps*
-
-![Final](Add photo of final product here)
-*Explain the final build*
-
-### Project Demo
-# Video
-[Add your demo video link here]
-*Explain what the video demonstrates*
-
-# Additional Demos
-[Add any extra demo materials/links]
 
 ## Team Contributions
-- [Name 1]: [Specific contributions]
-- [Name 2]: [Specific contributions]
-- [Name 3]: [Specific contributions]
+- Rifa vp: Concept,editing and coding
+- Dilna p: Prompting,designing and coding
+
 
 ---
 Made with ❤️ at TinkerHub Useless Projects 
